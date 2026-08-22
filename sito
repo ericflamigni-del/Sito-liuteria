@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Liutaio - Liuteria Artigianale</title>
+    
+    <style>
+        :root {
+            --bg-color: #f7f5f0;
+            --card-bg: #ffffff;
+            --text-main: #2b2b2b;
+            --text-muted: #5a5a5a;
+            --accent: #8b5a2b; 
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            max-width: 550px; /* Leggermente allargato per ospitare le foto */
+            width: 100%;
+            padding: 50px 40px;
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            width: 30px;
+            height: 2px;
+            background-color: var(--accent);
+            margin: 0 auto 30px auto;
+        }
+
+        .description {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            color: var(--text-muted);
+        }
+
+        /* --- SEZIONE INSTAGRAM --- */
+        .instagram-section {
+            margin-bottom: 40px;
+        }
+
+        .instagram-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: bold;
+        }
+
+        .instagram-title:hover {
+            color: var(--accent);
+        }
+
+        /* Questa è la griglia finta. La cancellerai quando avrai il widget */
+        .ig-placeholder-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .ig-placeholder-item {
+            aspect-ratio: 1 / 1;
+            background-color: #f0f0f0;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 0.8rem;
+        }
+
+        /* --- SEZIONE CONTATTI --- */
+        .contact-section {
+            border-top: 1px solid #eaeaea;
+            padding-top: 25px;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--text-main);
+        }
+
+        .contact-section a {
+            color: var(--text-main);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Nome Cognome</h1>
+        <p class="subtitle">Liuteria Artigianale</p>
+
+        <div class="divider"></div>
+
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Questo è un testo di prova. 
+            Qui racconterai brevemente la tua filosofia, la cura nella selezione dei legni e l'attenzione 
+            ai dettagli nella costruzione e nel restauro dei tuoi strumenti. Un lavoro fatto di pazienza e passione.
+        </p>
+
+        <!-- INIZIO SEZIONE INSTAGRAM -->
+        <div class="instagram-section">
+            <a href="https://instagram.com/tuoprofilo" class="instagram-title" target="_blank">@tuoprofilo</a>
+            
+            <!-- INIZIO AREA WIDGET -->
+            <!-- Quando avrai il codice del widget (es. di Elfsight o LightWidget), 
+                 cancella il div "ig-placeholder-grid" qui sotto e incolla il tuo codice al suo posto -->
+            
+            <div class="ig-placeholder-grid">
+                <div class="ig-placeholder-item">Foto 1</div>
+                <div class="ig-placeholder-item">Foto 2</div>
+                <div class="ig-placeholder-item">Foto 3</div>
+            </div>
+
+            <!-- FINE AREA WIDGET -->
+        </div>
+        <!-- FINE SEZIONE INSTAGRAM -->
+
+        <div class="contact-section">
+            <p><strong>Email:</strong> <a href="mailto:info@tuamail.com">info@tuamail.com</a></p>
+            <p><strong>Telefono:</strong> <a href="tel:+390000000000">+39 000 000 0000</a></p>
+            <p><strong>Laboratorio:</strong> Via Roma 1, Milano (Su appuntamento)</p>
+        </div>
+    </div>
+
+</body>
+</html>
